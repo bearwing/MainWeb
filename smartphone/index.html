@@ -1,0 +1,210 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Connect website for Iphone, Android, Smartphone Mobile Website Template | Home :: w3layouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link href="smartphone/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="smartphone/css/responsiveslides.css">
+		<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="smartphone/js/responsiveslides.min.js"></script>
+		  <script>
+		    // You can also use "$(window).load(function() {"
+			    $(function () {
+			
+			      // Slideshow 1
+			      $("#slider1").responsiveSlides({
+			        maxwidth: 1600,
+			        speed: 600
+			      });
+			});
+		  </script>
+		   <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script src="smartphone/js/mobile.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	</head>
+	<body>
+		<!---start-wrap---->
+			<!---start-header---->
+				<!---start-wrap---->
+					<div class="wrap"  id="top">
+						<!---start-sidebar---->
+						<div id="w3-universal-nav">
+			    	<ul id="header">
+			    		<a href="index.html"><img src="smartphone/images/logo.png" alt=""/></a>
+			    	</ul>
+			    	<div id="w3-mobile-options">
+			    		<li id="w3-menu-trigger">
+			    			<li id="w3-search-trigger">
+			    				<a href="#">Search</a>
+			    			</li>
+			    	</div>
+			    	<ul id="w3-menu-links" style="display: none;">
+			    	</ul>
+			    	<div id="w3-search-module" style="display: none;">
+			    		<form id="w3-search-form" action="/Search/" method="get">
+			    			<p>
+			    				<label for="q">
+			    					<span class="w3-access">Search</span>
+			    				</label>
+			    				<input accesskey="s" type="text" maxlength="100" value="" name="q" id="q"><input type="hidden" value="17" name="v">
+			    			</p>
+			    		</form>
+			    		</div>
+			    		</div>
+			</div>
+			<!-- The menu -->
+			  <nav class="clearfix">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+	<div class="clear"> </div>
+				<!--start-image-slider---->
+					<div class="image-slider">
+						<!-- Slideshow 1 -->
+					    <ul class="rslides" id="slider1">
+					      <li><img src="smartphone/images/slider1.png" alt=""></li>
+					      <li><img src="smartphone/images/slider2.png" alt=""></li>
+					      <li><img src="smartphone/images/slider3.png" alt=""></li>
+					    </ul>
+						 <!-- Slideshow 2 -->
+					</div>
+					<!--End-image-slider---->
+			</div>
+			<!---End-header---->
+		</div>
+	</div>
+		<!---start-content----->
+		<div class="content">
+			<div class="border">
+			</div>
+				<div class="wel-mesg">
+					<div class="wrap">
+					<h2>Welcome to our site!</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+					<a href="#">Join us!</a>
+				</div>
+			</div>
+			<div class="border">
+			</div>
+				<div class="content-top-grids">
+					<div class="wrap">
+					<div class="top-grid">
+						<div class="top-grid-head">
+							<h3><span>OUR</span> LIVE SUPPORT</h3>
+							<img src="smartphone/images/01.jpg" alt="" />
+						</div>
+						<div class="top-grid-info">
+							<h4>LOREM IPSUM</h4>
+							<p>DIPISICING ELIT SED DO EIUSMOD PORINCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.</p>
+						</div>
+						<a href="#">Read more</a>
+					</div>
+					<div class="top-grid  last-grid">
+						<div class="top-grid-head">
+							<h3><span>CLIENT</span>STATISTICS</h3>
+							<img src="smartphone/images/01.jpg" alt="" />
+						</div>
+						<div class="top-grid-info">
+							<h4>LOREM IPSUM</h4>
+							<p>DIPISICING ELIT SED DO EIUSMOD PORINCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.</p>
+						</div>
+						<a href="#">Read more</a>
+					</div>
+					<div class="top-grid">
+						<div class="top-grid-head">
+							<h3><span>INTERNET</span>ACCESS</h3>
+							<img src="smartphone/images/01.jpg" alt="" />
+						</div>
+						<div class="top-grid-info">
+							<h4>LOREM IPSUM</h4>
+							<p>DIPISICING ELIT SED DO EIUSMOD PORINCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.</p>
+						</div>
+						<a href="#">Read more</a>
+					</div>
+					<div class="top-grid last-grid">
+						<div class="top-grid-head">
+							<h3><span> NEW</span>POSITIONS</h3>
+							<img src="smartphone/images/01.jpg" alt="" />
+						</div>
+						<div class="top-grid-info">
+							<h4>LOREM IPSUM</h4>
+							<p>DIPISICING ELIT SED DO EIUSMOD PORINCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA.</p>
+						</div>
+						<a href="#">Read more</a>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+			<div class="border">
+			</div>
+			<div class="content-banner">
+				<div class="wrap">
+					<div class="content-banner-info-banner">
+						<a href="#"><img src="smartphone/images/02.jpg" title="abnner"></a>
+					</div>
+				<div class="content-banner-info">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h3>- Lorem ipsum /<a href="#">Admin</a></h3>
+					<div class="clear"> </div>
+				</div>
+				
+					<div class="clear"> </div>
+			</div>
+		</div>
+		</div>
+			<div class="footer">
+				<div class="wrap">
+					<div class="footer-right">
+						<a href="#top" class="scroll"> </a>
+						<p>Design by <a href="http://w3layouts.com/">w3layouts</a></p>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>
+		<!---End-content----->
+		<!---End-wrap---->
+	</body>
+</html>
+

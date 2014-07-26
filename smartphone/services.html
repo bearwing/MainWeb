@@ -1,0 +1,163 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Connect website for Iphone, Android, Smartphone Mobile Website Template | Services :: w3layouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link href="smartphone/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		   <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script src="smartphone/js/mobile.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	</head>
+	<body>
+		<!---start-wrap---->
+			<!---start-header---->
+				<!---start-wrap---->
+					<div class="wrap"  id="top">
+						<!---start-sidebar---->
+						<div id="w3-universal-nav">
+			    	<ul id="header">
+			    		<a href="index.html"><img src="smartphone/images/logo.png" alt=""/></a>
+			    	</ul>
+			    	<div id="w3-mobile-options">
+			    		<li id="w3-menu-trigger">
+			    			<li id="w3-search-trigger">
+			    				<a href="#">Search</a>
+			    			</li>
+			    	</div>
+			    	<ul id="w3-menu-links" style="display: none;">
+			    	</ul>
+			    	<div id="w3-search-module" style="display: none;">
+			    		<form id="w3-search-form" action="/Search/" method="get">
+			    			<p>
+			    				<label for="q">
+			    					<span class="w3-access">Search</span>
+			    				</label>
+			    				<input accesskey="s" type="text" maxlength="100" value="" name="q" id="q"><input type="hidden" value="17" name="v">
+			    			</p>
+			    		</form>
+			    		</div>
+			    		</div>
+			</div>
+			<!-- The menu -->
+			  <nav class="clearfix">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+	<div class="clear"> </div>
+			</div>
+			<!---End-header---->
+		</div>
+	</div>
+		<!---start-content----->
+		<div class="content">
+			<!---start-about---->
+			<div class="services">
+				<div class="wrap">
+					<div class="top-head">
+						<h3>Services</h3>
+						<ul>
+							<li><a href="index.html">Home / </a></li>
+							<li><a href="#"><span>Services</span></a></li>
+						</ul>
+					</div><br />
+					<div class="clear"> </div>
+					<div class="services-grids">
+						<div class="services-grid">
+						<a href="smartphone/images/s1.jpg" class="flipLightBox">
+							<img src="smartphone/images/s1.jpg"  alt="Image 2" />
+							</a>
+							<h3>dolor sit amet</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur lit, sed do eiusmod veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+							<a class="button" href="#">More</a>
+						</div>
+						<div class="services-grid last-grid">
+						<a href="smartphone/images/s3.jpg" class="flipLightBox">
+							<img src="smartphone/images/s3.jpg"  alt="Image 2" />
+							</a>
+							<h3>dolor sit amet</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur lit, sed do eiusmod veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+							<a class="button" href="#">More</a>
+						</div>
+						<div class="services-grid">
+						<a href="smartphone/images/s2.jpg" class="flipLightBox">
+							<img src="smartphone/images/s2.jpg"  alt="Image 2" />
+							</a>
+							<h3>dolor sit amet</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur lit, sed do eiusmod veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+							<a class="button" href="#">More</a>
+						</div>
+						<div cl
+						<div class="services-grid last-grid">
+						<a href="smartphone/images/s2.jpg" class="flipLightBox">
+							<img src="smartphone/images/s2.jpg"  alt="Image 2" />
+							</a>
+							<h3>dolor sit amet</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur lit, sed do eiusmod veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+							<a class="button" href="#">More</a>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<script type="text/javascript" src="smartphone/js/fliplightbox.min.js"></script>
+						<script type="text/javascript">$('body').flipLightBox()</script>
+						<div class="clear"> </div>
+				</div>
+			</div>
+			<!---End-about---->
+		</div>
+			<div class="footer">
+				<div class="wrap">
+					<div class="footer-right">
+						<a href="#top" class="scroll"> </a>
+						<p>Design by <a href="http://w3layouts.com/">w3layouts</a></p>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>
+		<!---End-content----->
+		<!---End-wrap---->
+	</body>
+</html>
+

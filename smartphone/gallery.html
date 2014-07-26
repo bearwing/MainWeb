@@ -1,0 +1,534 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Connect website for Iphone, Android, Smartphone Mobile Website Template | Gallery :: w3layouts</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link href="smartphone/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<link href='http://fonts.googleapis.com/css?family=Archivo+Narrow' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		   <script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+				});
+			});
+		</script>
+		<script src="smartphone/js/mobile.js"></script>
+		<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<script type="text/javascript" src="smartphone/js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="smartphone/js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+	</head>
+	<body>
+		<!---start-wrap---->
+			<!---start-header---->
+				<!---start-wrap---->
+					<div class="wrap"  id="top">
+						<!---start-sidebar---->
+						<div id="w3-universal-nav">
+			    	<ul id="header">
+			    		<a href="index.html"><img src="smartphone/images/logo.png" alt=""/></a>
+			    	</ul>
+			    	<div id="w3-mobile-options">
+			    		<li id="w3-menu-trigger">
+			    			<li id="w3-search-trigger">
+			    				<a href="#">Search</a>
+			    			</li>
+			    	</div>
+			    	<ul id="w3-menu-links" style="display: none;">
+			    	</ul>
+			    	<div id="w3-search-module" style="display: none;">
+			    		<form id="w3-search-form" action="/Search/" method="get">
+			    			<p>
+			    				<label for="q">
+			    					<span class="w3-access">Search</span>
+			    				</label>
+			    				<input accesskey="s" type="text" maxlength="100" value="" name="q" id="q"><input type="hidden" value="17" name="v">
+			    			</p>
+			    		</form>
+			    		</div>
+			    		</div>
+			</div>
+			<!-- The menu -->
+			  <nav class="clearfix">
+					<ul>
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="services.html">Services</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+	<div class="clear"> </div>
+			</div>
+			<!---End-header---->
+		</div>
+	</div>
+		<!---start-content----->
+		<div class="content">
+			<!---start-about---->
+			<div class="gallery1">
+				<div class="wrap">
+					<div class="top-head">
+						<h3>Gallery</h3>
+						<ul>
+							<li><a href="index.html">Home / </a></li>
+							<li><a href="#"><span>Gallery</span></a></li>
+						</ul>
+					</div><br />
+					<div class="clear"> </div>
+					<div class="container">
+
+					<ul id="filters" class="clearfix">
+						<li><span class="filter active" data-filter="app card icon logo web">All</span></li>
+						<li><span class="filter" data-filter="app">App</span></li>
+						<li><span class="filter" data-filter="card">Card</span></li>
+						<li><span class="filter" data-filter="icon">Icon</span></li>
+						<li><span class="filter" data-filter="logo">Logo</span></li>
+						<li><span class="filter" data-filter="web">Web</span></li>
+					</ul>
+
+		<div id="portfoliolist">
+			
+			<div class="portfolio logo1" data-cat="logo">
+				<div class="portfolio-wrapper">				
+					<a href="smartphone/images/s1.jpg" class="flipLightBox">
+						<img src="smartphone/images/s1.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bird Document</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Visual Infography</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>		
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<a href="smartphone/images/s3.jpg" class="flipLightBox">
+						<img src="smartphone/images/s3.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sonor's Design</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Typography Company</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+						
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">
+					<a href="smartphone/images/s1.jpg" class="flipLightBox">
+						<img src="smartphone/images/s1.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Weatherette</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">BMF</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s3.jpg" class="flipLightBox">
+						<img src="smartphone/images/s3.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Techlion</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="portfolio logo1" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">KittyPic</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																							
+			
+			<div class="portfolio app" data-cat="app">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s1.jpg" class="flipLightBox">
+						<img src="smartphone/images/s1.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Graph Plotting</a>
+							<span class="text-category">APP</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>														
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="smartphone/images/s4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">QR Quick Response</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+
+			<div class="portfolio logo1" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="smartphone/images/s3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Mobi Sock</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo1" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="smartphone/images/s4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Village Community Church</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>													
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="smartphone/images/s1.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Domino's Pizza</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>							
+
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<img src="smartphone/images/s4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Backend Admin</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<img src="smartphone/images/s3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Instagram</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Student Guide</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">
+					<a href="smartphone/images/s3.jpg" class="flipLightBox">
+						<img src="smartphone/images/s3.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Scoccer</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																																																																
+
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">						
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">3D Map</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>			
+			
+			<div class="portfolio web" data-cat="web">
+				<div class="portfolio-wrapper">						
+					<a href="smartphone/images/s3.jpg" class="flipLightBox">
+						<img src="smartphone/images/s3.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Note</a>
+							<span class="text-category">Web design</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>									
+			
+			<div class="portfolio logo1" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Native Designers</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																	
+
+			<div class="portfolio logo1" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s1.jpg" class="flipLightBox">
+						<img src="smartphone/images/s1.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Bookworm</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																												
+			
+			<div class="portfolio icon" data-cat="icon">
+				<div class="portfolio-wrapper">			
+					<a href="smartphone/images/s4.jpg" class="flipLightBox">
+						<img src="smartphone/images/s4.jpg"  alt="Image 2" />
+					</a>
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Sandwich</a>
+							<span class="text-category">Icon</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>																								
+			
+			<div class="portfolio card" data-cat="card">
+				<div class="portfolio-wrapper">			
+					<img src="smartphone/images/s3.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Reality</a>
+							<span class="text-category">Business card</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>	
+
+			<div class="portfolio logo1" data-cat="logo">
+				<div class="portfolio-wrapper">			
+					<img src="smartphone/images/s4.jpg" alt="" />
+					<div class="label">
+						<div class="label-text">
+							<a class="text-title">Speciallisterne</a>
+							<span class="text-category">Logo</span>
+						</div>
+						<div class="label-bg"></div>
+					</div>
+				</div>
+			</div>				
+										
+			
+		</div>
+		
+	</div><!-- container -->
+	<script type="text/javascript" src="smartphone/js/fliplightbox.min.js"></script>
+						<script type="text/javascript">$('body').flipLightBox()</script>
+						<div class="clear"> </div>
+				</div>
+			</div>
+			<!---End-about---->
+		</div>
+			<div class="footer">
+				<div class="wrap">
+					<div class="footer-right">
+						<a href="#top" class="scroll"> </a>
+						<p>Design by <a href="http://w3layouts.com/">w3layouts</a></p>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>
+		<!---End-content----->
+		<!---End-wrap---->
+	</body>
+</html>
+
